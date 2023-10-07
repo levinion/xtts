@@ -1,2 +1,2 @@
-# xtts
+# xtts-go
 go sdk for xtts model api
