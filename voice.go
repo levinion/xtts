@@ -91,7 +91,7 @@ func (c *Client) CreateVoiceFromTextPrompt(name, prompt string) (*Voice, error) 
 			"authorization": c.authorization,
 		}).
 		SetSuccessResult(result).
-		SetBodyJsonMarshal(payload).Post("https://app.coqui.ai/api/v2/voices/xtts/clone-from-url")
+		SetBodyJsonMarshal(payload).Post("https://app.coqui.ai/api/v2/voices/xtts/from-prompt")
 	if err != nil {
 		return nil, err
 	}
